@@ -48,6 +48,7 @@
         <module>activiti-app-rest</module>
         <module>activiti-app-conf</module>
         <module>activiti-app</module>
+        <module>activiti-core</module>
     </modules>
 
     <dependencyManagement>
@@ -241,6 +242,12 @@
                 <groupId>com.fasterxml.jackson.datatype</groupId>
                 <artifactId>jackson-datatype-joda</artifactId>
                 <version>${jackson.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>1.2.45</version>
             </dependency>
 
             <!-- DATABASE -->
