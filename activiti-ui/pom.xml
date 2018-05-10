@@ -1,25 +1,25 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>4.0.0</modelVersion>
 
-    <name>Activiti UI App Root</name>
+    <modelVersion>4.0.0</modelVersion>
+    <name>activiti-ui-root</name>
 
     <groupId>org.activiti</groupId>
     <artifactId>activiti-ui-root</artifactId>
     <version>6.0.0</version>
     <packaging>pom</packaging>
 
-    <parent>
-        <groupId>org.activiti</groupId>
-        <artifactId>activiti-root</artifactId>
-        <relativePath>../..</relativePath>
-        <version>6.0.0</version>
-    </parent>
+    <!--<parent>-->
+        <!--<groupId>org.activiti</groupId>-->
+        <!--<artifactId>activiti-root</artifactId>-->
+        <!--<relativePath>../..</relativePath>-->
+        <!--<version>6.0.0</version>-->
+    <!--</parent>-->
 
     <properties>
         <!-- Maven build properties -->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <java.version>1.7</java.version>
+        <java.version>1.8</java.version>
 
         <!-- Libraries versions -->
         <activiti.version>6.0.0</activiti.version>
@@ -148,6 +148,42 @@
                 <groupId>org.activiti</groupId>
                 <artifactId>activiti-rest</artifactId>
                 <version>${activiti.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.activiti</groupId>
+                <artifactId>activiti-dmn-api</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.activiti</groupId>
+                <artifactId>activiti-dmn-engine</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.activiti</groupId>
+                <artifactId>activiti-dmn-model</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.activiti</groupId>
+                <artifactId>activiti-dmn-xml-converter</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.activiti</groupId>
+                <artifactId>activiti-dmn-json-converter</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.activiti</groupId>
+                <artifactId>activiti-dmn-rest</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.activiti</groupId>
+                <artifactId>activiti-dmn-engine-configurator</artifactId>
+                <version>${project.version}</version>
             </dependency>
 
             <!-- Xerces is needed (eg by jboss, which ships with an old version), for process definition parsing -->

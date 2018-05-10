@@ -7,7 +7,7 @@
 		<artifactId>activiti-ui-root</artifactId>
 		<version>6.0.0</version>
 	</parent>
-	<name>Activiti Content Storage - File System Implementation</name>
+	<name>activiti-content-storage-fs</name>
 	<description>Implementation of the content-storage-api using a file-system.</description>
 	<dependencies>
 		<dependency>

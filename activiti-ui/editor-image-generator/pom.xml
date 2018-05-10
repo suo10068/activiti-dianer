@@ -2,7 +2,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
 	<modelVersion>4.0.0</modelVersion>
-	<name>Activiti editor - Image generator</name>
+	<name>activiti-editor-image-generator</name>
 	<parent>
 		<groupId>org.activiti</groupId>
 		<artifactId>activiti-ui-root</artifactId>
